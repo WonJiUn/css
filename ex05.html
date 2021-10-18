@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.sp{background-color: cyan; width:400px; height:50px;}
+	.rp1{position: fixed; right:30px; top:10px; background-color: orange; width:400px; height: 50px; z-index:-2222;}
+	.rp2{position: absolute; right:60px; top:20px; background-color: lightgreen; width:400px; height: 50px; z-index:-1111;}
+	h1{position: relative; z-index:1111;}
+</style>
+</head>
+<body>
+	<h1>위치지정 2 : <a href="#">클릭해주세요!</a></h1>
+	<p class="sp">정적위치 설정</p>
+	<p class="sp">정적위치 설정</p>
+	<p class="sp">정적위치 설정</p>
+	<div class="rp1">고정위치설정(fixed) - right 30px, top 10px</div>
+	<div class="rp2">절대위치설정(absolute) - right 60px, top 20px</div>
+
+
+<!-- 고정위치 설정은 스크롤을 내려도 화면에서 사라지지 않는다
+이 경우 다른요소들이 고정위치나 절대위치항목에 가려서 안보이는 경우가 생기는데 z-index로 해결할 수 있다
+static(기본) 설정일 경우 뒤로 보낼것은 음수처리를 해야 z-index가 적용이 됨
+static이 아닌경우는 z-index 숫자가 큰 경우 앞에 위치하게됨 -->
+</body>
+</html>

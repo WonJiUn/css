@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	ul { background-color: pink; display:flex;justify-content: flex-end;}
+	li { background-color: red; list-style: none; text-align: center; padding: 10px 20px 10px 20px; margin: 0px 0px 0px 5px;}
+	a { text-decoration : none; color: white;}
+	li:hover { background-color: gray; }
+	
+	section:first-line { font-size: 20px; font-weight: 700;}
+	input:focus {background-color: lime;}
+	.re {color:white;}
+	.click:active + .re { background-color: gray; }
+	
+</style>
+</head>
+<body>
+<div style="width:800px; margin: 0 auto" >
+	<ul>
+		<li><a href="#q1">1번 문제로 이동</a></li>
+		<li><a href="#q2">2번 문제로 이동</a></li>
+		<li><a href="#q3">3번 문제로 이동</a></li>
+		<li><a href="#q4">4번 문제로 이동</a></li>
+	</ul>
+	<div>
+		<img src="resources/images/quiz.png" width="800" height="250px">
+	</div>
+<hr><p>
+	<section>
+	정답 확인 클릭시 정답 보여짐
+	</section>
+</p><hr>
+	<section id="q1">
+	<p><font color="blue">문제 1) 정적 언어는?</font></p>
+	정답 작성<input type="text">
+	<label class="click">정답 클릭 확인</label>
+	<label class="re"> html, javascript, css 등</label>
+	</section>
+	
+<hr>
+	<section id="q2">
+	<p><font color="red">문제 2) 서버 사이드 언어는?</font></p>
+	정답 작성<input type="text">
+	<label class="click">정답 클릭 확인</label>
+	<label class="re"> jsp, django, php 등</label>
+	</section>
+<hr>
+	<section id="q3">
+	<p><font color="green">문제 3) 프로그래밍 언어는?</font></p>
+	정답 작성<input type="text">
+	<label class="click">정답 클릭 확인</label>
+	<label class="re"> java, c, python 등</label>
+	</section>
+<hr>
+	<section id="q4">
+	<p><font color="black">문제 4) 클라이언트 사이드 언어는?</font></p>
+	정답 작성<input type="text">
+	<label class="click">정답 클릭 확인</label>
+	<label class="re"> html, javascript, css 등</label>
+	</section>
+		
+</div>
+</body>
+</html>

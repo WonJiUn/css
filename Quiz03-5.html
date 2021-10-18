@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quiz03-5</title>
+<style type="text/css">
+	#wrap{width:800px; margin: auto;}
+	.header{
+		display:flex; height: 130px;
+	}
+	.header h1{width:100%; text-align: center;}
+	.img{width:100px; height:100px; box-shadow: 10px 10px 15px black;}
+	.img02{width:120px; height:120px; }
+	.img03{width:50px; height:50px; }
+	
+	.nav ul { background-color: gray; display:flex;}
+	.nav li { list-style: none; text-align: center; padding: 10px 20px 10px 20px; margin: 0px 0px 0px 5px;}
+	.nav a { text-decoration : none; color: white;}
+	.nav li:hover { background-color: black; }
+	
+	.content{display: flex;}
+	.content_1{width:20%;}
+	.content_2{width:45%;}
+	.content_3{width:35%;}
+	
+	label{float:left; text-align: top; word-spacing: normal}
+	
+	.footer{margin:10px}
+	
+	.textbox{width:150px; height:25px; }
+	.loginbtn{width: 70px; height:62px; }
+	
+	.link{font:15px;}
+	.news{padding-top: 20px;}
+	
+	
+</style>
+
+</head>
+<body>
+<div id='wrap'>
+	<div class="header">
+		<img class='img'; src="resources/images/맛집.png">
+		<h1>맛집탐방 이야기</h1>
+	</div>
+	
+	<div class="nav">
+		<ul>
+		<li><a href="#1">HOME</a></li>
+		<li><a href="#2">게시판</a></li>
+		<li><a href="#3">내정보</a></li>
+	</ul>
+	</div>
+	
+	<div class="content">
+		<div class="content_1">
+			<img class='img02'; src="resources/images/l_정우성.jpg">
+			<img class='img02'; src="resources/images/l_aside.gif">
+		</div>
+		<div class="content_2";>
+			<div><h3>&#60;오늘의 맛집&#62;</h3></div>
+			<div>
+				<div>
+					<label>오늘 방문한 곳은 맛있는 음식이<br> 나오는 집.</label> &nbsp; &nbsp; <img class="img03" src="resources/images/맛집01.jpg">
+				</div>
+				<div>
+					<label>오늘 방문한 곳은 맛있는 음식이<br> 나오는 집.</label> &nbsp; &nbsp; <img class="img03" src="resources/images/맛집02.jpg">
+				</div>
+				<div>
+					<label>오늘 방문한 곳은 맛있는 음식이<br> 나오는 집.</label> &nbsp; &nbsp; <img class="img03" src="resources/images/맛집02.jpg">
+				</div>
+		
+			</div>
+		</div>	
+		<div class="content_3">
+			<div style="display: flex;">
+				<div>
+					<input class="textbox" type="text" name="id"><br>
+					<input class="textbox" type="text" name="pwd">
+				</div>
+				<div>
+					<input class="loginbtn" type="submit" value="로그인">
+				</div>
+			</div>
+			<div class="link">
+				<a href="#">회원가입</a> / 
+				<a href="#">ID/PW찾기</a>
+			</div>
+			<div class="news">
+			<h3><p>오늘의 뉴스</p></h3>
+			날씨 : -32도<br>
+			미세먼지 : 농도심함<br>
+			운세 : 누구 보다 좋음
+			
+			</div>
+		</div>
+</div>
+<hr>
+	<div class="footer">
+		<i><font color="#35B62C"><b>CARE LAB</b></font>
+		Copyright &copy; AllRights Reserved</i>
+		&nbsp; &nbsp; &nbsp;
+		&reg; 1999 | 회사소개 | TEL : 777-777
+	</div>
+</body>
+</html>

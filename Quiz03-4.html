@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quiz03-4</title>
+<style type="text/css">
+/*display:flex; flex-flow: column; -> div사이에 의도치 않은 공백이 생겼을때 해결법*/
+	#wrap{width: 800px; margin:auto; border: 3px solid black; text-align: center; display:flex; flex-flow: column;}
+	.header{background-color: red; height:130px;}
+	.nav{background-color: #FFE400; height: 100px;}
+	.middle{background-color: skyblue; display: flex; height: 350px;}
+	.section1{background-color: green; width: 70%;}
+		.header02{background-color: pink; border: 3px solid black; height:30px; width:500px; margin: 30px; font-size: 20px; padding-top: 5px;}
+		.article02{background-color: pink;border: 3px solid black; height:30px; width:500px; margin: 30px; font-size: 20px; padding-top: 5px;}
+		.footer02{background-color: pink; border: 3px solid black; height:30px; width:500px; margin: 30px; font-size: 20px; padding-top: 5px;}
+	.aside{background-color: skyblue; width: 30%;}
+	.footer{background-color: pink; height: 100px;}
+
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div class="header"><h1>&#60;header&#62;</h1></div>
+	<div class="nav"><h2>&#60;nav&#62;</h2></div>
+	<div class="middle">
+		<div class="section1"><h2>&#60;section1&#62;</h2>
+			<div class="header02">&#60;header&#62;</div>
+			<div class="article02">&#60;article&#62;</div>
+			<div class="footer02">&#60;footer&#62;</div>
+		</div>
+		<div class="aside"><h2>&#60;aside&#62;</h2></div>
+	</div>
+	<div class="footer"><h2>&#60;footer&#62;</h2></div>
+</div>
+</body>
+</html>

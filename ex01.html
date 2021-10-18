@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	* {
+		color: orange;
+		/* background-color: skyblue; */
+		font-size: 15pt;
+	}
+	
+	/* 태그 선택자 */
+	h1 {background-color: gray;}
+	
+	/* 클래스 선택자 */
+	.class01{ color: navy; background-color: aqua;}
+	label.class01{ color: green; background-color: fuchsia;}
+	
+	/* 아이디 선택자 */
+	#id01 { color: navy; background-color: yellow; font-style: italic;}
+	
+	/* 가상 선택자 */
+	/* link : 방문하지 않았던곳, visited : 방문한곳, hover : 마우스가 올라갔을때, active: 클릭하는 순간*/
+	.a:link {color:pink; text-decoration: none;}
+	.a:visited { color: gray; }
+	.a:hover { color: black; text-decoration: overline; }
+	.a:active { background-color: yellow;}
+	
+	.div01 {
+		width: 200px; height:100px; color: blue; background-color: green; opacity: 0.9;
+	}
+	.div01:hover {
+		width: 400px; height:50px; color: red; background-color: yellow; opacity: 0.5;
+		transition : all 1.5s linear 0.5s
+	}
+	nav ul{ list-style: none; display: flex; justify-content: flex-end;}
+	nav ul li { margin:0 13px; padding: 10px 10px;}
+	nav ul li a { text-decoration: none; color: white;}
+	nav ul li a:hover { 
+	color:orange; 
+	padding-bottom: 3px; 
+	border-bottom: 1px solid orange;
+	transition: all 0.25s;
+	}
+	.div02 { overflow: hidden; background-color: blue; height:100px;}
+	.div02 div { background-color: red; width: 200px; height: 200px; color: white;}
+	
+</style>
+</head>
+<body>
+
+	<div class="div02">
+		hello
+		<div>css</div>
+	</div>
+
+<hr>
+
+<nav style="background-color: black;">
+	<ul background-color: red;>
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">BOARD</a></li>
+		<li><a href="#">MEMBERSHIP</a></li>
+	</ul>
+</nav>
+
+	<div class="div01">
+		가상 클래스 이용한 애니메이션 효과 <br> 마우스가 위에 있으면 박스가 늘어나요
+	</div>
+
+<hr>
+	
+	<a href="#">test</a><br>
+
+<hr>
+	<h1>전체 스타일</h1>
+	<h1 id="id01">아이디 선택자 적용</h1>
+	<h1 class="class01">새롭게 추가된 내용</h1>
+	<label class="class01">그래!</label>
+
+<!-- 
+스타일 적용은 헤드에서 할 수 있다
+	* : 전체에 적용
+	h1 : h1 전체에 적용
+	.class01 : 클래스 선택자
+	text-decoration: none (밑줄을 없앰)
+	transition : all 1.5s linear 0.5s (0.5초 기다렸다가 시작되어서 1.5초안에 모든 명령어를 끝내라는 뜻)
+	display: flex (원래 세로인데 가로로 정렬)
+	overflow: hidden (div02 안에 넣은 div의 크기가 div02의 범위를 벗어날 경우 숨김처리하라)
+	padding-bottom: 3px; (글자랑 밑줄 사이의 간격)
+ -->
+</body>
+</html>
